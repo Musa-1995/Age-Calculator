@@ -4,32 +4,11 @@ function diplay() {
       x.style.display = "flex";
   }
 
-//   function calculate(){
-//       var i = "";
-//       i = document.getElementById("name").value;
-//       var j = 0;
-//       j = document.getElementById("year").value;
-
-//       j *= 365;
       function ageCalculate(){
-        //document.getElementById('age').InnerHtml
-      // document.getElementById("demo").InnerHtml=4+5;
-       //document.write="Hi";
        var i = "";
          i = document.getElementById("name").value;
        var birthDate =document.getElementById('birth_date').value;
-    
-    //if(birthDate==""){
-      //  alert("Choose correct birthdate.")
-    //}else{
-      //  alert(birthDate);
-      //  alert(Date());
         var d = new Date(birthDate);
-    
-       // document.getElementById("age").innerHTML = d;
-    
-    //}
-    
             var mdate = birthDate.toString();
             var yearThen = parseInt(mdate.substring(0,4), 10);
             var monthThen = parseInt(mdate.substring(5,7), 10);
@@ -37,10 +16,7 @@ function diplay() {
             
             var today = new Date();
             var birthday = new Date(yearThen, monthThen-1, dayThen);
-         //   alert(today.valueOf() + " " + birthday.valueOf());
             var differenceInMilisecond = today.valueOf() - birthday.valueOf();
-          //  alert(differenceInMilisecond);
-            
             var year_age = Math.floor(differenceInMilisecond / 31536000000);
             var day_age = Math.floor((differenceInMilisecond % 31536000000) / 86400000);
             
