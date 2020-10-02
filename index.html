@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <div class="start">
+        <h1>Age Calculator</h1>
+        <button onclick="diplay();" class="butStart">Get Started</button>
+    </div>
+    <div class="calculator" id="calculator">
+        <input type="text" id="name" placeholder="Name">
+        <input type="date" id="birth_date">
+        <input class="btn" type="button" value="Calculate Age" onclick="ageCalculate()">
+        <p id="answer"></p>
+    </div>
+    <div id="age"></div>
+    <script src="app.js"></script>
 </body>
 </html>
