@@ -35,14 +35,10 @@ function diplay() {
                 document.getElementById("age").innerHTML = ("Invalid birthday - Please try again!");
             }
             else {
-      document.getElementById("age").innerHTML = i+" You have live for "+year_age + " years " + month_age + " months " + day_age + " days"
-            + "<br/> or <br/> " 
-            + tMnt + " months " + day_age + " days" 
-            + "<br/> or <br/>" 
-            +  tDays + " days" 
-            + "<br/> or <br/>" 
-            +  tDays*24 + " hours" 
-            + "<br/> or <br/>" 
-            +  tDays*24*3600 + " seconds" 
-            + "<br/> or <br/>" 
-            +  tDays*24*3600*1000 + " miliseconds" ;}}
+      document.getElementById("age").innerHTML = i+" You have live for "+year_age + " years " + month_age + " months " + day_age + " days, \t"
+           
+            +  tDays*24 + " in hours\t"
+            +  tDays*24*3600 + "  in seconds\t"
+            +  tDays*24*3600*1000 + " in miliseconds\t" ;}
+         
+          }
