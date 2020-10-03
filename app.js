@@ -27,18 +27,16 @@ function diplay() {
             var month_age = Math.floor(day_age/30);
             
             day_age = day_age % 30;
-            
+
+            var days = year_age *= 365;
             var tMnt= (month_age + (year_age*12));
             var tDays =(tMnt*30) + day_age;
             
             if (isNaN(year_age) || isNaN(month_age) || isNaN(day_age)) {
                 document.getElementById("age").innerHTML = ("Invalid birthday - Please try again!");
+            }else if( i === ""){
+              document.getElementById("age").innerHTML = ("Name Should not be Empty, Please fill your name!");
             }
             else {
-      document.getElementById("age").innerHTML = i+" You have live for "+year_age + " years " + month_age + " months " + day_age + " days, \t"
-           
-            +  tDays*24 + " in hours,\t"
-            +  tDays*24*3600 + "  in seconds,\t"
-            +  tDays*24*3600*1000 + " in miliseconds.\t" ;}
-         
+      document.getElementById("age").innerHTML = i+" You have live for "+year_age + " years " + month_age + " months " + day_age + " days, \t" + days + "\tin days\t" + tDays*24 + " in hours,\t" + tDays*24*3600 + "  in seconds,\t" + tDays*24*3600*1000 + " in miliseconds.\t" ;}
           }
