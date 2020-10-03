@@ -28,7 +28,7 @@ function diplay() {
             
             day_age = day_age % 30;
 
-            var days = year_age *= 365;
+            
             var tMnt= (month_age + (year_age*12));
             var tDays =(tMnt*30) + day_age;
             
@@ -38,5 +38,5 @@ function diplay() {
               document.getElementById("age").innerHTML = ("Name Should not be Empty, Please fill your name!");
             }
             else {
-      document.getElementById("age").innerHTML = i+" You have live for "+year_age + " years " + month_age + " months " + day_age + " days, \t" + days + "\tin days\t" + tDays*24 + " in hours,\t" + tDays*24*3600 + "  in seconds,\t" + tDays*24*3600*1000 + " in miliseconds.\t" ;}
+      document.getElementById("age").innerHTML = i+" You have live for " + year_age + " years " + month_age + " months " + day_age + " days, \t" + tDays*24 + " in hours,\t" + tDays*24*3600 + "  in seconds,\t" + tDays*24*3600*1000 + " in miliseconds.\t" ;}
           }
